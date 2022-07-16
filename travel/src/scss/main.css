@@ -1,0 +1,192 @@
+/* Abstracts */ /* Color */
+/* size */
+/* desktop */
+/* 20px */
+/* 40px */
+/* 16px */
+/* 24px */
+/* 35px */
+/* 32px */
+/* mobile */
+/* 14px */
+/* 11px */
+/* 9px */
+/* border */
+/* font-family */
+/* container-width */
+/* Fonts */
+body {
+  display: flex;
+}
+
+body {
+  flex-direction: column;
+}
+
+body {
+  justify-content: space-between;
+}
+
+/* Base */
+body {
+  min-height: 100vh;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*Basic styles*/
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h2,
+h3,
+h5,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list],
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+section,
+main,
+footer,
+header,
+article {
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@font-face {
+  font-family: "Aleo";
+  src: url("../fonts/AleoItalic.woff") format("woff"), url("../fonts/AleoItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Aleo";
+  src: url("../fonts/AleoRegular.woff") format("woff"), url("../fonts/AleoRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aleo";
+  src: url("../fonts/AleoBold.woff") format("woff"), url("../fonts/AleoBold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RedHatText";
+  src: url("../fonts/RedHatRegular.woff") format("woff"), url("../fonts/RedHatRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RedHatText";
+  src: url("../fonts/RedHatTextMedium.woff") format("woff"), url("../fonts/RedHatTextMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Magra";
+  src: url("../fonts/MagraBold.woff") format("woff"), url("../fonts/MagraBold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aleo";
+  src: url("../fonts/AleoBoldItalic.woff") format("woff"), url("../fonts/AleoBoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+/*Utilities  */
+/* Layout  */
+/* Components */
+
+/*# sourceMappingURL=main.css.map */
