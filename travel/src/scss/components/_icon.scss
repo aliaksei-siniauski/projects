@@ -1,0 +1,12 @@
+.icon {
+  fill: $light-color;
+  @extend %cursor-pointer;
+  &:hover {
+    fill: $hover-color;
+  }
+}
+
+.icon-logo {
+  width: 30px;
+  height: 30px;
+}

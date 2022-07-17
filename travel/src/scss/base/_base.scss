@@ -4,4 +4,6 @@ body {
   @extend %flex-column;
   @extend %js-content-space-between;
   @include font($fs-main, $fs-button);
+  font-family: $ff-main;
+  color: $light-color;
 }

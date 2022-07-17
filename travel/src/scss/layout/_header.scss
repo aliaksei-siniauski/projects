@@ -1,0 +1,11 @@
+.header {
+  padding: 2.5rem 0 2.4rem;
+  background-color: rgba(242, 120, 92, 0.7);
+  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.header__container {
+  @extend %flex;
+  @extend %js-content-space-between;
+  @extend %al-items-center;
+}

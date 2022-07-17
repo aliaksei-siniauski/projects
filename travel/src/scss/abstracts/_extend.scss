@@ -1,19 +1,6 @@
-
-%cursor-pointer {
-  cursor: pointer;
+%display-none {
+  display: none;
 }
-
-%text-center {
-  text-align: center;
-}
-
-%text-uppercase {
-  text-transform: uppercase;
-}
-%transition {
-  transition: 0.5s ease-in-out;
-}
-
 %flex {
   display: flex;
 }
@@ -35,4 +22,20 @@
 
 %al-items-center {
   align-items: center;
+}
+
+
+%cursor-pointer {
+  cursor: pointer;
+}
+
+%text-center {
+  text-align: center;
+}
+
+%text-uppercase {
+  text-transform: uppercase;
+}
+%transition {
+  transition: 0.5s ease-in-out;
 }
