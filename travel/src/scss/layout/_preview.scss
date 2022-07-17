@@ -1,0 +1,23 @@
+.preview {
+  min-height: 100vh;
+  background-image: url("/src/images/main-bg.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.preview__container {
+  padding-top: 12.2rem;
+}
+.preview-content {
+  max-width: 89.2rem;
+}
+.preview__text {
+  margin-top: 3.1rem;
+  font-style: italic;
+  font-weight: $bold;
+}
+
+.preview__search {
+    margin-top: 4.6rem;
+}

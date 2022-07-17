@@ -14,13 +14,14 @@
 /* border */
 /* outset */
 /* font-family */
+/* font-weight */
 /* container-width */
 /* Fonts */
 .list__item--mobile {
   display: none;
 }
 
-.list, .header__container, body {
+.list, .search, .header__container, body {
   display: flex;
 }
 
@@ -32,7 +33,7 @@ body {
   flex-direction: column;
 }
 
-.header__container, body {
+.search, .header__container, body {
   justify-content: space-between;
 }
 
@@ -208,6 +209,14 @@ article {
   font-display: swap;
   font-style: italic;
 }
+h1 {
+  font-family: "Aleo";
+  font-size: 8rem;
+  line-height: 9.6rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
 /*Utilities  */
 .container {
   max-width: 1230px;
@@ -217,9 +226,39 @@ article {
 
 /* Layout  */
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 2.5rem 0 2.4rem;
   background-color: rgba(242, 120, 92, 0.7);
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.preview {
+  min-height: 100vh;
+  background-image: url("/src/images/main-bg.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.preview__container {
+  padding-top: 12.2rem;
+}
+
+.preview-content {
+  max-width: 89.2rem;
+}
+
+.preview__text {
+  margin-top: 3.1rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.preview__search {
+  margin-top: 4.6rem;
 }
 
 /* Components */
@@ -242,6 +281,13 @@ article {
 .button--small {
   padding: 1rem 3rem;
 }
+.button--main {
+  padding: 1.35rem 3.25rem;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 500;
+  font-style: normal;
+}
 
 .logo {
   font-family: "Magra";
@@ -249,6 +295,25 @@ article {
   line-height: 3.9rem;
   font-weight: 600;
   font-style: normal;
+}
+
+.search {
+  padding: 1.8rem 1.9rem 1.8rem 4rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 1.6rem;
+}
+
+.search__input {
+  min-width: 56rem;
+  background: transparent;
+  border: none;
+}
+.search__input::placeholder {
+  color: hsl(11deg, 85%, 65%);
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .header__nav {

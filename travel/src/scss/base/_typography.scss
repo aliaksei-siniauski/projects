@@ -1,0 +1,4 @@
+h1 {
+  font-family: $ff-main;
+  @include font(8rem, 9.6rem, 700);
+}
