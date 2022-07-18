@@ -1,4 +1,7 @@
 .button {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
   display: inline-block;
   background: $main-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
@@ -10,8 +13,22 @@
   border-radius: $button-radius;
   @extend %cursor-pointer;
   @extend %transition;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken(royalblue, 15%);
+    transition: ease-in-out 0.5s;
+    z-index: -1;
+  }
   &:hover {
     color: $hover-color;
+    &::before {
+      width: 100%;
+    }
   }
   &--small {
     padding: 1rem 3rem;

@@ -1,0 +1,33 @@
+.footer__container {
+  min-height: 61px;
+  background: url("/src/images/fotter-bg.jpg");
+  @media (min-width: 1441px) {
+    max-width: none;
+    background-size: cover;
+  }
+}
+
+.footer-items {
+  @extend %flex;
+  @extend %js-content-space-between;
+}
+
+.footer-information {
+  margin: 0 auto;
+  padding-top: 1.8rem;
+  padding-left: 16.1rem;
+}
+
+.footer-information__text {
+  font-family: $ff-secondary;
+  @include font($fs-link, $height-link);
+}
+
+.footer-social {
+  @extend %flex;
+}
+
+.footer-social__item {
+  padding-top: 1.4rem;
+  padding-left: 2.3rem;
+}

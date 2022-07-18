@@ -21,7 +21,7 @@
   display: none;
 }
 
-.icon-square, .slider-bullets, .slider-items, .slider-wrapper, .list, .search, .story-item, .step-block, .steps-content, .header__container, body {
+.icon-square, .slider-bullets, .slider-items, .slider-wrapper, .list, .search, .footer-social, .footer-items, .story-item, .step-block, .steps-content, .header__container, body {
   display: flex;
 }
 
@@ -33,7 +33,7 @@
   flex-direction: column;
 }
 
-.slider-bullets, .search, .story-item, .steps-content, .header__container, body {
+.slider-bullets, .search, .footer-items, .story-item, .steps-content, .header__container, body {
   justify-content: space-between;
 }
 
@@ -381,8 +381,41 @@ h3 {
   min-width: 228px;
 }
 
+.footer__container {
+  min-height: 61px;
+  background: url("/src/images/fotter-bg.jpg");
+}
+@media (min-width: 1441px) {
+  .footer__container {
+    max-width: none;
+    background-size: cover;
+  }
+}
+
+.footer-information {
+  margin: 0 auto;
+  padding-top: 1.8rem;
+  padding-left: 16.1rem;
+}
+
+.footer-information__text {
+  font-family: "RedHatText";
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.footer-social__item {
+  padding-top: 1.4rem;
+  padding-left: 2.3rem;
+}
+
 /* Components */
 .button {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
   display: inline-block;
   background: hsl(189deg, 79%, 24%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
@@ -395,8 +428,22 @@ h3 {
   border: none;
   border-radius: 1rem;
 }
+.button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #1d44b8;
+  transition: ease-in-out 0.5s;
+  z-index: -1;
+}
 .button:hover {
   color: hsl(180deg, 100%, 50%);
+}
+.button:hover::before {
+  width: 100%;
 }
 .button--small {
   padding: 1rem 3rem;
@@ -579,6 +626,22 @@ h3 {
 .icon-arrow {
   width: 35px;
   height: 25px;
+}
+
+.icon-inst {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-youtube {
+  width: 32px;
+  height: 32px;
+  fill: transparent;
+}
+
+.icon-twitter {
+  width: 31px;
+  height: 31px;
 }
 
 /*# sourceMappingURL=main.css.map */
