@@ -334,7 +334,7 @@ h3 {
 
 .stories-inner {
   min-height: 1270px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7))), url("/src/images/fotter-bg.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7))), url("../images/fotter-bg.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
 }
@@ -384,6 +384,8 @@ h3 {
 .footer__container {
   min-height: 61px;
   background: url("../images/fotter-bg.jpg");
+  background-position: center -1260px;
+  background-repeat: no-repeat;
 }
 @media (min-width: 1441px) {
   .footer__container {

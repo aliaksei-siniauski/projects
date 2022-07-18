@@ -1,6 +1,8 @@
 .footer__container {
   min-height: 61px;
   background: url("../images/fotter-bg.jpg");
+  background-position: center -1260px;
+  background-repeat: no-repeat;
   @media (min-width: 1441px) {
     max-width: none;
     background-size: cover;
