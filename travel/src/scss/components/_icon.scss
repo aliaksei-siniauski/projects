@@ -10,3 +10,36 @@
   width: 30px;
   height: 30px;
 }
+
+.icon-square {
+  width: 100px;
+  height: 100px;
+  @extend %flex;
+  @extend %js-content-center;
+  @extend %al-items-center;
+  background: $secondary-color;
+  border-radius: $img-radius;
+}
+
+.icon-step-1 {
+  width: 50px;
+  height: 45px;
+  background-image: url("/src/icons/i-step-1.svg");
+}
+
+.icon-step-2 {
+  width: 52px;
+  height: 52px;
+  background-image: url("/src/icons/i-step-2.svg");
+}
+
+.icon-step-3 {
+  width: 60px;
+  height: 45px;
+  background-image: url("/src/icons/i-step-3.svg");
+}
+
+.icon-arrow {
+  width: 35px;
+  height: 25px;
+}

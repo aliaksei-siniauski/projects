@@ -1,13 +1,13 @@
-.preview {
-  min-height: 100vh;
-  background-image: url("/src/images/main-bg.jpg");
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .preview__container {
-  padding-top: 12.2rem;
+  padding-top: 3.2rem;
+  padding-bottom: 25.5rem;
+  background-image: url("/src/images/main-bg.jpg");
+  background-position: center -90px;
+  background-repeat: no-repeat;
+  @media (min-width: 1441px) {
+    max-width: none;
+    background-size: cover;
+  }
 }
 .preview-content {
   max-width: 89.2rem;
@@ -19,5 +19,5 @@
 }
 
 .preview__search {
-    margin-top: 4.6rem;
+  margin-top: 4.6rem;
 }

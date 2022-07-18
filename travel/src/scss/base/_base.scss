@@ -7,3 +7,10 @@ body {
   font-family: $ff-main;
   color: $light-color;
 }
+
+.section-title {
+  padding: 8rem 0 4rem;
+  color: $secondary-color;
+  @extend %text-center;
+  text-transform: uppercase;
+}
