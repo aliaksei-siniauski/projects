@@ -1,17 +1,16 @@
-
 .search {
-    @extend %flex;
-    @extend %js-content-space-between;
-    padding: 1.8rem 1.9rem 1.8rem 4rem;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: $img-radius;
+  @extend %flex;
+  @extend %js-content-space-between;
+  padding: 1.8rem 1.9rem 1.8rem 4rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: $img-radius;
+}
+.search__input {
+  min-width: 56rem;
+  background: transparent;
+  border: none;
+  &::placeholder {
+    color: $secondary-color;
+    @include font($fs-button, 2.9rem, $style: italic);
   }
-  .search__input {
-    min-width: 56rem;
-    background: transparent;
-    border: none;
-    &::placeholder {
-      color: $secondary-color;
-      @include font($fs-button, 2.9rem,$style: italic);
-    }
-  }
+}
