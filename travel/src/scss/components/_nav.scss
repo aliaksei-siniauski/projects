@@ -9,7 +9,6 @@
   padding-left: 1.1rem;
 }
 
-
 .list__item {
   font-family: $ff-secondary;
   @include font($fs-link, $height-link);
@@ -32,7 +31,7 @@
   }
   &::before {
     display: none;
-    content: '';
+    content: "";
     width: 70%;
     height: 0.2rem;
     position: absolute;

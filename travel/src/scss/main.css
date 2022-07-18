@@ -265,7 +265,7 @@ h3 {
 .header__container {
   padding-top: 2.4rem;
   padding-bottom: 2.4rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(11deg, 85%, 65%, 0.7))), url("/src/images/main-bg.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(11deg, 85%, 65%, 0.7))), url("../images/main-bg.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
 }
@@ -279,7 +279,7 @@ h3 {
 .preview__container {
   padding-top: 3.2rem;
   padding-bottom: 25.5rem;
-  background-image: url("/src/images/main-bg.jpg");
+  background-image: url("../images/main-bg.jpg");
   background-position: center -90px;
   background-repeat: no-repeat;
 }
@@ -383,7 +383,7 @@ h3 {
 
 .footer__container {
   min-height: 61px;
-  background: url("/src/images/fotter-bg.jpg");
+  background: url("../images/fotter-bg.jpg");
 }
 @media (min-width: 1441px) {
   .footer__container {
@@ -608,19 +608,19 @@ h3 {
 .icon-step-1 {
   width: 50px;
   height: 45px;
-  background-image: url("/src/icons/i-step-1.svg");
+  background-image: url("../icons/i-step-1.svg");
 }
 
 .icon-step-2 {
   width: 52px;
   height: 52px;
-  background-image: url("/src/icons/i-step-2.svg");
+  background-image: url("../icons/i-step-2.svg");
 }
 
 .icon-step-3 {
   width: 60px;
   height: 45px;
-  background-image: url("/src/icons/i-step-3.svg");
+  background-image: url("../icons/i-step-3.svg");
 }
 
 .icon-arrow {
