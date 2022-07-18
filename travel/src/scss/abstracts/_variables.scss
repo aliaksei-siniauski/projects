@@ -18,6 +18,8 @@ $fs-button: 2.4rem; /* 24px */
 $fs-title: 3.5rem; /* 35px */
 $fs-logo: 3.2rem; /* 32px */
 
+$height-link: 2.1rem;
+$height-main: 2.4rem;
 /* mobile */
 
 $fs-section-mobile: 1.4rem; /* 14px */
@@ -27,14 +29,20 @@ $fs-main-mobile: 0.9rem; /* 9px */
 /* border */
 
 $button-radius: 1rem;
+$img-radius: 1.6rem;
+
+/* outset */
+$padding-inline: 12rem;
 
 /* font-family */
-
 $ff-main: "Aleo";
 $ff-secondary: "RedHatText";
 $ff-logo: "Magro";
 
+/* font-weight */
+$bold: 700;
+
 /* container-width */
 
-$desktop-width: 1230px;
+$desktop-width: 1440px;
 $mobile-width: 390px;

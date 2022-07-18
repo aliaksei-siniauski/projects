@@ -1,0 +1,60 @@
+.stories__container {
+  max-width: $desktop-width;
+  padding-inline: $padding-inline;
+}
+
+.stories-inner {
+  min-height: 1270px;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(255, 255, 255, 0.7))
+    ),
+    url("/src/images/fotter-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  @media (min-width: 1441px) {
+    background-size: cover;
+  }
+}
+
+.stories-content {
+  padding: 4rem 0;
+}
+
+.story-item {
+  @extend %flex;
+  @extend %js-content-space-between;
+  gap: 4rem;
+  &:not(:last-child) {
+    padding-bottom: 3rem;
+  }
+}
+
+.story-block {
+  max-width: 760px;
+}
+
+.story-image {
+  filter: drop-shadow(0px 4px 4px $main-color);
+  border-radius: $img-radius;
+}
+
+.story-block__title {
+  color: $main-color;
+}
+
+.story-block__text {
+  margin-top: 2.4rem;
+  color: $main-color;
+  &--link {
+    font-weight: $bold;
+    text-decoration: underline;
+    @extend %cursor-pointer;
+  }
+}
+
+.story__button {
+  min-width: 228px;
+}

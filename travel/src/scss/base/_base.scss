@@ -3,5 +3,14 @@ body {
   @extend %flex;
   @extend %flex-column;
   @extend %js-content-space-between;
-  @include font($fs-main, $fs-button);
+  @include font($fs-main, $height-main);
+  font-family: $ff-main;
+  color: $light-color;
+}
+
+.section-title {
+  padding: 8rem 0 4rem;
+  color: $secondary-color;
+  @extend %text-center;
+  text-transform: uppercase;
 }
