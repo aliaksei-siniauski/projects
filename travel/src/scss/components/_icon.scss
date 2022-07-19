@@ -19,29 +19,51 @@
   @extend %al-items-center;
   background: $secondary-color;
   border-radius: $img-radius;
+  @include media-mobile {
+    width: 70px;
+    height: 70px;
+  }
 }
 
+.icon-step {
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .icon-step-1 {
   width: 50px;
   height: 45px;
   background-image: url("../icons/i-step-1.svg");
+
+  @include media-mobile {
+    background-image: url("../icons/i-step-1-mb.svg");
+  }
 }
 
 .icon-step-2 {
   width: 52px;
   height: 52px;
   background-image: url("../icons/i-step-2.svg");
+  @include media-mobile {
+    background-image: url("../icons/i-step-2-mb.svg");
+  }
 }
 
 .icon-step-3 {
   width: 60px;
   height: 45px;
   background-image: url("../icons/i-step-3.svg");
+  @include media-mobile {
+    background-image: url("../icons/i-step-3-mb.svg");
+  }
 }
 
 .icon-arrow {
   width: 35px;
   height: 25px;
+  @include media-mobile {
+    width: 10px;
+    height: 6px;
+  }
 }
 
 .icon-inst {
@@ -58,4 +80,9 @@
 .icon-twitter {
   width: 31px;
   height: 31px;
+}
+
+.icon-slider {
+  width: 2.6em;
+  height: 2.6rem;
 }

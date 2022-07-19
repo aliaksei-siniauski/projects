@@ -1,13 +1,21 @@
 h1 {
   font-family: $ff-main;
-  @include font(8rem, 9.6rem, 700);
+  @include font(8rem, 9.6rem, $bold);
 }
 
 h2 {
   font-family: $ff-secondary;
   @include font(4rem, 5.3rem);
+  @include media-mobile {
+    font-size: $fs-section-mobile;
+    line-height: 1.9rem;
+  }
 }
 
 h3 {
-  @include font(3.5rem, 4.2rem, 400);
+  @include font(3.5rem, 4.2rem, $bold);
+  @include media-mobile {
+    font-size: $fs-title-mobile;
+    line-height: 1.3rem;
+  }
 }

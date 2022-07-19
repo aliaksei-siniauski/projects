@@ -1,5 +1,8 @@
 .header__nav {
   margin: auto;
+  @include media-mobile {
+    display: none;
+  }
 }
 
 .list {

@@ -13,4 +13,7 @@ body {
   color: $secondary-color;
   @extend %text-center;
   text-transform: uppercase;
+  @include media-mobile {
+    padding: 2rem 0;
+  }
 }

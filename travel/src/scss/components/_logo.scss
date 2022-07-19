@@ -2,3 +2,9 @@
   font-family: "Magra";
   @include font(3.2rem, 3.9rem, 600);
 }
+
+.logo__ttile {
+  @include media-mobile {
+    display: none;
+  }
+}

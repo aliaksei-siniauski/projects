@@ -7,6 +7,12 @@
     max-width: none;
     background-size: cover;
   }
+  @include media-mobile {
+    min-height: 65px;
+    background: url("../images/fotter-bg-mb.jpg");
+    background-position: center -660px;
+    background-repeat: no-repeat;
+  }
 }
 
 .footer-items {

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,7 +14,7 @@
           <svg class="icon icon-logo">
             <use xlink:href="src/icons/sprite.svg#i-logo"></use>
           </svg>
-          <a href="index.html" class="logo">Travel Portal</a>
+          <a href="index.html" class="logo__ttile">Travel Portal</a>
         </div>
         <!-- close logo -->
         <nav class="nav header__nav">
@@ -46,6 +45,11 @@
           <button class="button button--small">Login</button>
         </div>
         <!-- close header__button -->
+        <span class="hamburger">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </span>
       </div>
       <!-- close container -->
     </header>
@@ -82,7 +86,7 @@
             <div class="step-block">
               <div class="step-block__icon">
                 <span class="icon-square">
-                  <span class="icon icon-step-1"> </span>
+                  <span class="icon icon-step icon-step-1"> </span>
                 </span>
               </div>
               <!-- close step-block__icon -->
@@ -92,7 +96,7 @@
             <div class="step-block">
               <div class="step-block__icon">
                 <span class="icon-square">
-                  <span class="icon icon-step-2"> </span>
+                  <span class="icon icon-step icon-step-2"> </span>
                 </span>
               </div>
               <!-- close step-block__icon -->
@@ -102,7 +106,7 @@
             <div class="step-block">
               <div class="step-block__icon">
                 <span class="icon-square">
-                  <span class="icon icon-step-3"> </span>
+                  <span class="icon icon-step icon-step-3"> </span>
                 </span>
               </div>
               <!-- close step-block__icon -->
@@ -122,46 +126,49 @@
           </h2>
         </div>
         <!-- close container -->
-        <div class="slider-wrapper">
-          <div class="slider-items">
-            <div class="slider-item slider-left">
-              <span class="slider-item__title"> SPAIN </span>
+        <div class="slider__container">
+          <div class="slider-wrapper">
+            <div class="slider-items">
+              <div class="slider-item slider-left">
+                <span class="slider-item__title"> SPAIN </span>
+              </div>
+              <!-- close slider-item -->
+              <div class="slider-item slider-center">
+                <span class="slider-item__title"> JAPAN </span>
+              </div>
+              <!-- close slider-item -->
+              <div class="slider-item slider-right">
+                <span class="slider-item__title"> USA </span>
+              </div>
+              <!-- close slider-item -->
             </div>
-            <!-- close slider-item -->
-            <div class="slider-item slider-center">
-              <span class="slider-item__title"> JAPAN </span>
+            <!-- close slider -->
+            <a class="slider-arrow arrow-prew">
+              <svg class="icon icon-slider">
+                <use xlink:href="src/icons/sprite.svg#i-prew"></use>
+              </svg>
+            </a>
+            <a class="slider-arrow arrow-next">
+              <svg class="icon icon-slider">
+                <use xlink:href="src/icons/sprite.svg#i-next"></use>
+              </svg>
+            </a>
+            <div class="slider-bullets">
+              <span class="slider-bullet bullet-active--mb"></span>
+              <span class="slider-bullet bullet-active"></span>
+              <span class="slider-bullet"></span>
             </div>
-            <!-- close slider-item -->
-            <div class="slider-item slider-right">
-              <span class="slider-item__title"> USA </span>
-            </div>
-            <!-- close slider-item -->
+            <!-- close slider-bullets -->
+            <button class="button button--more">
+              <svg class="icon icon-arrow">
+                <use xlink:href="src/icons/sprite.svg#i-arrow"></use>
+              </svg>
+              Find More
+            </button>
           </div>
-          <!-- close slider -->
-          <a class="slider-arrow arrow-prew">
-            <svg class="icon i-slider">
-              <use xlink:href="src/icons/sprite.svg#i-prew"></use>
-            </svg>
-          </a>
-          <a class="slider-arrow arrow-next">
-            <svg class="icon i-slider">
-              <use xlink:href="src/icons/sprite.svg#i-next"></use>
-            </svg>
-          </a>
-          <div class="slider-bullets">
-            <span class="slider-bullet bullet-active--mb"></span>
-            <span class="slider-bullet bullet-active"></span>
-            <span class="slider-bullet"></span>
-          </div>
-          <!-- close slider-bullets -->
-          <button class="button button--more">
-            <svg class="icon icon-arrow">
-              <use xlink:href="src/icons/sprite.svg#i-arrow"></use>
-            </svg>
-            Find More
-          </button>
+          <!-- slider-wrapper -->
         </div>
-        <!-- slider-wrapper -->
+        <!-- close container -->
       </section>
       <!-- close destinations section -->
       <section id="stories" class="stories">
@@ -287,10 +294,6 @@
               <!-- story-item -->
               <div class="story-item">
                 <picture>
-                  <source
-                    media="(min-width: 391px)"
-                    srcset="src/images/story-4.jpg"
-                  />
                   <source
                     media="(min-width: 320px)"
                     srcset="src/images/story-4-mb.jpg"

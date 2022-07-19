@@ -8,16 +8,39 @@
     max-width: none;
     background-size: cover;
   }
+  @include media-mobile {
+    padding-top: 2rem;
+    padding-bottom: 6.12rem;
+    background-image: url("/src/images/main-bg-mb.jpg");
+    background-position: center -98px;
+  }
+}
+.preview__title {
+  @include media-mobile {
+    display: none;
+  }
 }
 .preview-content {
-  max-width: 89.2rem;
+  max-width: 892px;
+  @include media-mobile {
+    max-width: 360px;
+  }
 }
 .preview__text {
   margin-top: 3.1rem;
   font-style: italic;
   font-weight: $bold;
+  @include media-mobile {
+    display: none;
+  }
 }
 
 .preview__search {
+  min-width: 560px;
   margin-top: 4.6rem;
+  @include media-mobile {
+    padding: 0;
+    margin-top: 2.4rem;
+    min-width: 360px;
+  }
 }
