@@ -35,6 +35,12 @@
   }
 }
 
+.stories__title {
+  @include media-mobile {
+    padding-bottom: 1rem;
+  }
+}
+
 .stories-content {
   padding: 4rem 0;
   @include media-mobile {
@@ -48,6 +54,9 @@
   gap: 4rem;
   &:not(:last-child) {
     padding-bottom: 3rem;
+    @include media-mobile {
+      padding-bottom: 1.5rem;
+    }
   }
   @include media-mobile {
     gap: 1rem;
@@ -59,7 +68,7 @@
 }
 
 .story-image {
-  filter: drop-shadow(0px 4px 4px $main-color);
+  filter: drop-shadow(0px 4px 4px #0d606f);
   border-radius: $img-radius;
   @include media-mobile {
     max-width: none;
@@ -68,6 +77,9 @@
 
 .story-block__title {
   color: $main-color;
+  @include media-mobile {
+    margin-top: 0.5rem;
+  }
 }
 
 .story-block__text {
