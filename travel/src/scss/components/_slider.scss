@@ -61,6 +61,9 @@
   font-family: $ff-secondary;
   @include font($fs-logo, 4.2rem);
   @extend %text-uppercase;
+  @include media-tablet {
+    @include font(2vw, 2vw);
+  }
   @include media-mobile {
     padding: 0.8rem 0 17.6rem 1.5rem;
     @include font(2rem, 2.6rem);

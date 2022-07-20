@@ -4,6 +4,9 @@
 }
 
 .logo__ttile {
+  @include media-tablet-large {
+    display: none;
+  }
   @include media-mobile {
     display: none;
   }

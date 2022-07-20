@@ -10,7 +10,7 @@
   @include media-mobile {
     min-height: 65px;
     background: url("../images/fotter-bg-mb.jpg");
-    background-position: center -660px;
+    background-position: center -628px;
     background-repeat: no-repeat;
   }
 }
@@ -24,6 +24,9 @@
   margin: 0 auto;
   padding-top: 1.8rem;
   padding-left: 16.1rem;
+  @media (max-width: 829px) {
+    display: none;
+  }
 }
 
 .footer-information__text {
@@ -33,9 +36,21 @@
 
 .footer-social {
   @extend %flex;
+  @media (max-width: 829px) {
+    margin: 0 auto;
+  }
 }
 
 .footer-social__item {
-  padding-top: 1.4rem;
+  padding-top: 1.5rem;
   padding-left: 2.3rem;
+  @include media-mobile {
+    padding-left: 2.2rem;
+    &:first-child {
+      padding-left: 0.8rem;
+    }
+    &:nth-child(3) {
+      padding-left: 2.1rem;
+    }
+  }
 }

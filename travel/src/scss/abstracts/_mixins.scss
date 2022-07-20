@@ -23,3 +23,33 @@
     @content;
   }
 }
+
+@mixin media-laptop-large {
+  @media (max-width: 1260px) {
+    @content;
+  }
+}
+
+@mixin media-laptop {
+  @media (max-width: 1050px) {
+    @content;
+  }
+}
+
+@mixin media-tablet-large {
+  @media (max-width: 951px) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-mobile-big {
+  @media (max-width: 576px) {
+    @content;
+  }
+}

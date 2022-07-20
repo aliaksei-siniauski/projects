@@ -9,11 +9,19 @@
   }
 }
 .search__input {
+  width: 40%;
+  @include font($fs-button, 2.9rem, 400, $style: italic);
   background: transparent;
   border: none;
+  @media (max-width: 800px) {
+    width: 60%;
+  }
+
   &::placeholder {
     color: $secondary-color;
-    @include font($fs-button, 2.9rem, 400, $style: italic);
+    @include media-tablet {
+      @include font(2.3vw, 2.3vw);
+    }
     @include media-mobile {
       font-size: $fs-section-mobile;
       line-height: 1.7rem;

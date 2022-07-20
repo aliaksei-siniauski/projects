@@ -6,6 +6,7 @@ body {
   @include font($fs-main, $height-main);
   font-family: $ff-main;
   color: $light-color;
+  overflow: hidden;
 }
 
 .section-title {
@@ -13,7 +14,14 @@ body {
   color: $secondary-color;
   @extend %text-center;
   text-transform: uppercase;
+  @include media-laptop {
+    padding: 4.5rem 0;
+  }
+  @include media-tablet {
+    @include font(5vw, 5vw);
+  }
   @include media-mobile {
     padding: 2rem 0;
+    @include font($fs-section-mobile, 1.9rem);
   }
 }

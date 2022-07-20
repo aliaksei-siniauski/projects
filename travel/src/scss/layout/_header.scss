@@ -28,6 +28,17 @@
   }
   @include media-mobile {
     padding-top: 4.4rem;
-    background-image: url("/src/images/main-bg-mb.jpg");
+    background: -webkit-linear-gradient(
+        -90deg,
+        #0d606f 1%,
+        rgba(13, 96, 111, 0) 100%
+      ),
+      url("/src/images/main-bg-mb.jpg");
+  }
+}
+
+.header__button {
+  @include media-tablet {
+    display: none;
   }
 }
